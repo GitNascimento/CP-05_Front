@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #F8E7D4;
+    --color-secondary: #342717;
+    --color-border: #F2F2F2;
+    --font-sans: 'Urbanist', sans-serif;
+    --text-btn: 1.2rem;
+    --text-display: clamp(2.5rem, 5vw + 1rem, 6rem);
+    --text-price: 1.17em;
+    --breakpoint-tablet: 42.5625rem;
+    --breakpoint-desktop: 64.0625rem;
+    --animate-slide: slide 10s linear infinite;
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}

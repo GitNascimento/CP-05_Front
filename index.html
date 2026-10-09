@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint-05 - Refatoração com Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="leading-[normal]">
+
+    <section class="min-h-dvh bg-[url('../images/banner0.jpg')] bg-no-repeat bg-cover bg-bottom p-8 flex flex-col justify-center items-start gap-8">
+        <h1 class="text-display text-primary text-balance w-4/5 desktop:w-1/2 font-bold">Encontre o tênis que combina com você.</h1>
+        <a href="" class="text-secondary bg-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar agora</a>
+    </section>
+
+    <section class="w-9/10 mx-auto my-16 text-center grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-x-8 gap-y-12 desktop:gap-y-0">
+        <div class="relative">
+            <img class="w-full rounded-2xl" src="./images/tenis01.jpg" alt="compre seu tênis">
+            <a href="" class="absolute bottom-8 left-8 bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar agora</a>
+        </div>
+        <div class="relative">
+            <img class="w-full rounded-2xl" src="./images/tenis02.jpg" alt="compre seu tênis">
+            <a href="" class="absolute bottom-8 left-8 bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar agora</a>
+        </div>
+        <div class="relative tablet:col-span-2 desktop:col-span-1">
+            <img class="w-full rounded-2xl" src="./images/tenis03.jpg" alt="compre seu tênis">
+            <a href="" class="absolute bottom-8 left-8 bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar agora</a>
+        </div>
+    </section>
+
+    <section class="logos overflow-hidden flex group">
+        <div class="logos-slide flex items-center justify-center shrink-0 animate-slide group-hover:[animation-play-state:paused]">
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/adidas.webp" alt="Logo Adidas" loading="lazy"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/asics.webp" alt="Logo Asics"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/converse.webp" alt="Logo Converse"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/joma.webp" alt="Logo Joma"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/jordan.webp" alt="Logo Jordan"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/lacoste.webp" alt="Logo Lacoste"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/mizuno.webp" alt="Logo Mizuno"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/nike.webp" alt="Logo Nike"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/nord.webp" alt="Logo Nord"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/puma.webp" alt="Logo Puma"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/reebok.webp" alt="Logo Reebok"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/umbro.webp" alt="Logo Umbro"></a>
+            <a href=""><img class="h-20 mx-4 opacity-60 transition-all duration-500 hover:opacity-100" src="./images/marcas/under-armour.webp" alt="Logo Under-Armour"></a>
+        </div>
+    </section>
+
+    <section class="w-9/10 mx-auto my-16 text-center">
+        <h2 class="text-display mb-8 text-secondary font-bold">Coleção 2026</h2>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-8">
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis04.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis05.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis06.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis07.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis04.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis05.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis06.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+            <div class="border border-border rounded-2xl pb-8">
+                <img class="w-full rounded-t-2xl" src="./images/tenis07.jpg" alt="compre seu tênis" loading="lazy">
+                <h3 class="text-price font-bold my-8">R$ 999,99</h3>
+                <a href="" class="bg-secondary text-primary py-4 px-12 rounded-2xl text-btn font-semibold">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-9/10 mx-auto my-16 text-center">
+        <h2 class="text-display mb-8 text-secondary font-bold">Novos modelos</h2>
+        <div class="grid grid-cols-1 desktop:grid-cols-2 desktop:auto-rows-[400px] gap-8">
+            <div class="overflow-hidden rounded-2xl desktop:row-span-2"><img class="w-full h-full object-cover" src="./images/tenis08.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-2xl"><img class="w-full h-full object-cover" src="./images/tenis010.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-2xl"><img class="w-full h-full object-cover" src="./images/tenis09.jpg" alt="compre seu tênis" loading="lazy"></div>
+            <div class="overflow-hidden rounded-2xl desktop:col-span-2"><img class="w-full h-full object-cover" src="./images/tenis011.png" alt="compre seu tênis" loading="lazy"></div>
+        </div>
+    </section>
+
+    <script src="./js/scroll.js"></script>
+</body>
+
+</html>
